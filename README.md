@@ -54,6 +54,11 @@ $ npm i       // npm install packages
 $ nodemon // run it locally
 ```
 
+# Email and Password to login
+
+ADMIN_EMAIL = admin@gmail.com
+ADMIN_PASSWORD = 123456
+
 Email Me: aungmoeoofreelancer@gmail.com (welcome, say hi)
 
       
