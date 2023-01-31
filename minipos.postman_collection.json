@@ -1,0 +1,109 @@
+{
+	"info": {
+		"_postman_id": "dc5173b9-67ae-450a-a879-9e7d20219b59",
+		"name": "minipos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/api/products",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add new product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"image\": \"https://i.ibb.co/KV9Bx2y/item2-removebg-preview.png\",\r\n        \"description\": \"T shirt men\",\r\n        \"price\": 3000,\r\n        \"category\": [\r\n            \"men\",\r\n            \"shirt\"\r\n        ]}"
+				},
+				"url": {
+					"raw": "localhost:5000/api/products",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete product",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"image\": \"https://i.ibb.co/KV9Bx2y/item2-removebg-preview.png\",\r\n        \"description\": \"T shirt men\",\r\n        \"price\": 300000,\r\n        \"category\": [\r\n            \"men\",\r\n            \"shirt\"\r\n        ]}",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/api/products/63d8add762d16455d47909d2",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"products",
+						"63d8add762d16455d47909d2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Product",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"image\": \"https://i.ibb.co/DfZv4qj/item5-removebg-preview.png\",\r\n    \"description\": \"Jacket men\",\r\n    \"price\": 4000,\r\n    \"category\": [\r\n        \"men\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/api/products/63d8af5c62d16455d47909d7",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"products",
+						"63d8af5c62d16455d47909d7"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
